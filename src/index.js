@@ -38,3 +38,5 @@ function validateForm(fields) {
 
   return Object.keys(fieldErrors).length > 0 ? fieldErrors : null; // Return errors or null
 }
+
+export { validateField, validateForm };
