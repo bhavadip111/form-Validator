@@ -1,0 +1,26 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "simple and easy integrated form validator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavadip111/form-Validator.git"
+  },
+  "keywords": [
+    "form",
+    "form-validator",
+    "validaor",
+    "form-validation",
+    "validation"
+  ],
+  "author": "Bhavadip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhavadip111/form-Validator/issues"
+  },
+  "homepage": "https://github.com/bhavadip111/form-Validator#readme"
+}
