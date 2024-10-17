@@ -156,4 +156,28 @@ const MyForm = () => {
 export default MyForm;
 ```
 
+## ADVANCE
+
+If you need validation form in OnChange then take help from this
+
+```javascript
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prev) => ({
+    ...prev,
+    [name]: {
+      ...prev[name],
+      value: value,
+    },
+  }));
+
+  // Validate field on change
+  const fieldValidationErrors = validateForm({ [name]: formData[name] });
+  setErrors((prevErrors) => ({
+    ...prevErrors,
+    [name]: fieldValidationErrors ? fieldValidationErrors[name] : null,
+  }));
+};
+```
+
 - **Issues**: [Link for reporting issues](https://github.com/bhavadip111/form-Validator/issues)
