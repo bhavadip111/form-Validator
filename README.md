@@ -4,7 +4,7 @@ A simple and easy integrated form validator for JavaScript. This package provide
 
 ## Description
 
-`form-validator` is designed to help developers implement form validation quickly and efficiently. With customizable rules, it ensures that your forms meet the required standards before submission.
+`form-control-validator` is designed to help developers implement form validation quickly and efficiently. With customizable rules, it ensures that your forms meet the required standards before submission.
 
 ## Features
 
@@ -18,17 +18,17 @@ A simple and easy integrated form validator for JavaScript. This package provide
 You can install it using NPM or Yarn:
 
 ```bash
-npm install form-validator
-yarn add form-validator
+npm install form-control-validator
+yarn add form-control-validator
 ```
 
 ## Usage
 
-Once installed, you can import and use the `form-validator` function in your React components:
+Once installed, you can import and use the `form-control-validator` function in your React components:
 
 ```javascript
 import React, { useState } from "react";
-import { validateForm } from "form-validator";
+import { validateForm } from "form-control-validator";
 
 const MyForm = () => {
   const [formData, setFormData] = useState({
