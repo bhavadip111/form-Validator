@@ -18,8 +18,8 @@ A simple and easy integrated form validator for JavaScript. This package provide
 You can install it using NPM or Yarn:
 
 ```bash
-npm install simple-form-validator
-yarn add simple-form-validator
+npm install form-validator
+yarn add form-validator
 ```
 
 ## Usage
