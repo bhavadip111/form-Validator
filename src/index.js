@@ -1,29 +1,27 @@
 function validateField(value, rules) {
   let errors = [];
 
+  // Check if the field is required and is empty
   if (rules.required && !value) {
-    errors.push(rules.messages?.required || "This field is required.");
+    errors.push(rules.messages.required); // Use the custom message
   }
 
+  // Check minimum length
   if (rules.minLength && value.length < rules.minLength) {
-    errors.push(
-      rules.messages?.minLength ||
-        `This field must be at least ${rules.minLength} characters long.`
-    );
+    errors.push(rules.messages.minLength); // Use the custom message
   }
 
+  // Check maximum length
   if (rules.maxLength && value.length > rules.maxLength) {
-    errors.push(
-      rules.messages?.maxLength ||
-        `This field must not exceed ${rules.maxLength} characters.`
-    );
+    errors.push(rules.messages.maxLength); // Use the custom message
   }
 
+  // Check the pattern
   if (rules.pattern && !rules.pattern.test(value)) {
-    errors.push(rules.messages?.pattern || "Invalid format.");
+    errors.push(rules.messages.pattern); // Use the custom message
   }
 
-  return errors.length > 0 ? errors : null;
+  return errors.length > 0 ? errors : null; // Return errors or null
 }
 
 function validateForm(fields) {
@@ -38,7 +36,5 @@ function validateForm(fields) {
     }
   }
 
-  return Object.keys(fieldErrors).length > 0 ? fieldErrors : null;
+  return Object.keys(fieldErrors).length > 0 ? fieldErrors : null; // Return errors or null
 }
-
-module.exports = { validateField, validateForm };
