@@ -1,10 +1,11 @@
 {
   "name": "form-control-validator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple and easy integrated form validator",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/bhavadip111/form-Validator/issues"
   },
-  "homepage": "https://github.com/bhavadip111/form-Validator#readme"
+  "homepage": "https://github.com/bhavadip111/form-Validator#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8"
+  }
 }
