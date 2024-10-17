@@ -1,6 +1,6 @@
 {
   "name": "form-control-validator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "simple and easy integrated form validator",
   "main": "src/index.js",
   "scripts": {
@@ -14,9 +14,16 @@
   "keywords": [
     "form",
     "form-validator",
-    "validaor",
+    "validator",
     "form-validation",
-    "validation"
+    "validation",
+    "field-validation",
+    "error validation",
+    "error",
+    "form-control",
+    "react-validation",
+    "react form validation",
+    "react validator"
   ],
   "author": "Bhavadip",
   "license": "MIT",
